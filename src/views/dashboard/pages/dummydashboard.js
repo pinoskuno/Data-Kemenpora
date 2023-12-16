@@ -98,27 +98,33 @@ const dashboardHome = {
       </div>
   </section>
 
-  <div class="container">
-  <div class="row">
-      <!-- Kotak pertama untuk chart -->
-      <div class="col-lg-6">
-          <div class="card">
-              <div class="card-body">
-                  <!-- Tempatkan kode chart pertama di sini -->
-              </div>
+  <section class="section-padding section-bg" id="section_2">
+      <div class="container">
+          <div class="row" id='daftarMenu2'>
           </div>
       </div>
-      <!-- Kotak kedua untuk chart -->
-      <div class="col-lg-6">
-          <div class="card">
-              <div class="card-body">
-                  <!-- Tempatkan kode chart kedua di sini -->
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+  </section>
 
+  <section class="section-padding section-bg" id="section_2">
+      <div class="container">
+          <div class="row" id='daftarMenu3'>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-padding section-bg" id="section_2">
+      <div class="container">
+          <div class="row" id='daftarMenu4'>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-padding section-bg" id="section_2">
+      <div class="container">
+          <div class="row" id='daftarMenu5'>
+          </div>
+      </div>
+  </section>
 
 <section class="cta-section section-padding section-bg" style="padding-bottom:100px;">
 <div class="container">
@@ -146,6 +152,66 @@ const dashboardHome = {
                           <img src="${data.data().gambar}" class="featured-block-image img-fluid" alt="" style="object-fit:cover;width:150px;height:150px;">
 
                           <p class="featured-block-text text-uppercase"><strong>${data.data().nama_menu}</strong></p>
+                      </a>
+          </div>
+          </div>`
+        })
+        
+        const daftarMenu2Container = document.getElementById('daftarMenu2');
+        const fetchedMenu2 = await dashboardHomescreenFunctions.getAllMenu2();
+        fetchedMenu2.forEach((data) => {
+          daftarMenu2Container.innerHTML += `
+          <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4" >
+          <div class="featured-block d-flex justify-content-center align-items-center">
+                      <a href="${data.data().link}" target="_blank" class="d-block">
+                          <img src="${data.data().gambar}" class="featured-block-image img-fluid" alt="" style="object-fit:cover;width:150px;height:150px;">
+
+                          <p class="featured-block-text text-uppercase"><strong>${data.data().nama_menu2}</strong></p>
+                      </a>
+          </div>
+          </div>`
+        })
+
+        const daftarMenu3Container = document.getElementById('daftarMenu3');
+        const fetchedMenu3 = await dashboardHomescreenFunctions.getAllMenu3();
+        fetchedMenu3.forEach((data) => {
+          daftarMenu3Container.innerHTML += `
+          <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4" >
+          <div class="featured-block d-flex justify-content-center align-items-center">
+                      <a href="${data.data().link}" target="_blank" class="d-block">
+                          <img src="${data.data().gambar}" class="featured-block-image img-fluid" alt="" style="object-fit:cover;width:150px;height:150px;">
+
+                          <p class="featured-block-text text-uppercase"><strong>${data.data().nama_menu3}</strong></p>
+                      </a>
+          </div>
+          </div>`
+        })
+
+        const daftarMenu4Container = document.getElementById('daftarMenu4');
+        const fetchedMenu4 = await dashboardHomescreenFunctions.getAllMenu4();
+        fetchedMenu4.forEach((data) => {
+          daftarMenu4Container.innerHTML += `
+          <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4" >
+          <div class="featured-block d-flex justify-content-center align-items-center">
+                      <a href="${data.data().link}" target="_blank" class="d-block">
+                          <img src="${data.data().gambar}" class="featured-block-image img-fluid" alt="" style="object-fit:cover;width:150px;height:150px;">
+
+                          <p class="featured-block-text text-uppercase"><strong>${data.data().nama_menu4}</strong></p>
+                      </a>
+          </div>
+          </div>`
+        })
+
+        const daftarMenu5Container = document.getElementById('daftarMenu5');
+        const fetchedMenu5 = await dashboardHomescreenFunctions.getAllMenu5();
+        fetchedMenu5.forEach((data) => {
+          daftarMenu5Container.innerHTML += `
+          <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4" >
+          <div class="featured-block d-flex justify-content-center align-items-center">
+                      <a href="${data.data().link}" target="_blank" class="d-block">
+                          <img src="${data.data().gambar}" class="featured-block-image img-fluid" alt="" style="object-fit:cover;width:150px;height:150px;">
+
+                          <p class="featured-block-text text-uppercase"><strong>${data.data().nama_menu5}</strong></p>
                       </a>
           </div>
           </div>`
