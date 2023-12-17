@@ -120,17 +120,41 @@ const dashboardHome = {
 </div>
 
 
-<section class="cta-section section-padding section-bg" style="padding-bottom:100px;">
-<div class="container">
-  <div class="row justify-content-center align-items-center" id='daftarData'>
+    <section class="cta-section section-padding section-bg" style="padding-bottom:100px;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center" id='daftarData'>
 
-      <div class="col-lg-10 col-12 text-center mx-auto">
-          <h2 class="mb-5">DATA LAINNYA</h2>
-      </div>
+                <div class="col-lg-10 col-12 text-center mx-auto">
+                    <h2 class="mb-5">DATA LAINNYA</h2>
+                </div>
 
-  </div>
-</div>
-</section>`;
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container" data-aos="fade-up">
+
+            <div class="col-lg-10 col-12 text-center mx-auto">
+                <h2 class="mb-5">Gambar Bergerak</h2>
+            </div>
+
+            <div class="gallery-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-1.jpg"><img src="../../public/assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-2.jpg"><img src="../../public/assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-3.jpg"><img src="../../public/assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-4.jpg"><img src="../../public/assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-5.jpg"><img src="../../public/assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-6.jpg"><img src="../../public/assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-7.jpg"><img src="../../public/assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="gallery-lightbox" href="../../public/assets/img/gallery/gallery-8.jpg"><img src="../../public/assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>`;
     },
   
     async afterRender() {

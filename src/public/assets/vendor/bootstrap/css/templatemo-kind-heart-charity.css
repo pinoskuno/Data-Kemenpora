@@ -92,7 +92,7 @@ h4 {
 }
 
 h5 {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: var(--h5-font-size);
 }
 
@@ -326,7 +326,7 @@ strong {
 }
 
 .navbar-brand {
-  color: var(--primary-color);
+  color: #064ea2;
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-bold);
 }
@@ -503,7 +503,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: #064ea2;
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -1250,12 +1250,12 @@ blockquote::before {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--site-footer-bg-color);
+  background-color: #064ea2;
   padding-top: 70px;
 }
 
 .site-footer-bottom {
-  background-color: var(--secondary-color);
+  background-color: #064ea2;
   position: relative;
   z-index: 2;
   margin-top: 70px;
